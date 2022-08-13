@@ -6,8 +6,10 @@ sudo apt-get upgrade
 sudo apt install curl git
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
-cat '. $HOME/.asdf/asdf.sh\n' >> $HOME/.bashrc
-cat '. $HOME/.asdf/completions/asdf.bash\n' >> $HOME/.bashrc
+echo '. $HOME/.asdf/asdf.sh\n' >> ~/.bashrc
+echo '. $HOME/.asdf/completions/asdf.bash\n' >> ~/.bashrc
+
+source ~/.bashrc
 
 asdf plugin-add nodejs
 asdf plugin-add pnpm
